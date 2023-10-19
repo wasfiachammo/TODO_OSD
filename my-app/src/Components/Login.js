@@ -1,7 +1,6 @@
 
 import{react ,useState,useEffect} from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
-import './Login.css'
 import Logo from '../images/Logo.png'
 import Woman from '../images/Woman.png'
 import Man from '../images/Man.png'
@@ -12,9 +11,8 @@ const  Login=()=> {
     document.body.style.overflow='hidden';
     // const [email,setemail]=useState([]);
     // const [password,setpassword]=useState([]);
-
-
-     const navigate =useNavigate();
+  
+    const navigate =useNavigate();
      const ClickSignIn=()=>{
          navigate ("/todo")
     }

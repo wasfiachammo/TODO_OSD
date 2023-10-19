@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 import Logo1 from '../images/Logo1.png';
 import Search from '../images/Search.png';
@@ -43,6 +44,10 @@ const Todo = () => {
     const closeQuote = () => {
       setQuoteVisible(false);
     };
+    const prof =useNavigate();
+    const Clicklogin=()=>{
+        prof("/profile")
+   }
   return (
     <section className="container-fuild">
       <div className="row">
@@ -80,7 +85,7 @@ const Todo = () => {
             className="position-absolute top-1 start-100 translate-middle mt-3"
             style={{ width: '42px', height: '42px', opacity: 1, overflow: 'hidden', borderRadius: '50%', marginLeft: '50px' }}
           >
-            <img src={Bitmap} alt="Bitmap" style={{ width: '100%', height: 'auto', borderRadius: '50%' }} />
+            <img src={Bitmap} alt="Bitmap" style={{ width: '100%', height: 'auto', borderRadius: '50%' }} onClick={Clicklogin}/>
           </div>
         </div>
 
